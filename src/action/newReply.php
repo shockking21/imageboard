@@ -31,7 +31,7 @@
   }
     $arr = array();
     $sql_getPost = "SELECT * FROM Post WHERE postID="."$pid[0]";
-    if ($result = mysqli_query($connection, $sql_getPostID)) {
+    if ($result = mysqli_query($connection, $sql_getPost)) {
         while($row = mysqli_fetch_assoc($result)){
           $arr = $row;
         }
